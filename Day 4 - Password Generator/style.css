@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This is will not work without height. */
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0;
+    color: #23235b;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1042%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='32.415' cx='744.2' cy='122.3' fill='url(%23SvgjsLinearGradient1043)'%3e%3c/circle%3e%3ccircle r='21.52' cx='984.28' cy='308.51' fill='url(%23SvgjsLinearGradient1044)'%3e%3c/circle%3e%3ccircle r='38.825' cx='792.68' cy='25.59' fill='url(%23SvgjsLinearGradient1045)'%3e%3c/circle%3e%3ccircle r='22.85' cx='350.15' cy='158.91' fill='url(%23SvgjsLinearGradient1046)'%3e%3c/circle%3e%3ccircle r='19.605' cx='275.81' cy='12.18' fill='url(%23SvgjsLinearGradient1047)'%3e%3c/circle%3e%3ccircle r='16.32' cx='1298.11' cy='151.01' fill='url(%23SvgjsLinearGradient1048)'%3e%3c/circle%3e%3ccircle r='18.955' cx='140.37' cy='20.9' fill='url(%23SvgjsLinearGradient1049)'%3e%3c/circle%3e%3ccircle r='45.215' cx='707.87' cy='385.46' fill='%2343468b'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1042'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='679.37' y1='122.3' x2='809.03' y2='122.3' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='941.24' y1='308.51' x2='1027.32' y2='308.51' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1044'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='715.03' y1='25.590000000000003' x2='870.3299999999999' y2='25.590000000000003' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1045'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='304.45' y1='158.91' x2='395.85' y2='158.91' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='236.6' y1='12.18' x2='315.02' y2='12.18' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1047'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1265.4699999999998' y1='151.01' x2='1330.7499999999998' y2='151.01' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1048'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='102.46000000000001' y1='20.9' x2='178.28' y2='20.9' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1049'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+/* CLASSES */
+.container{
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.2);
+    padding: 2rem;
+    width: 25rem;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+.generated-container{
+    background-color: #23235b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.generated-container #result{
+    word-wrap: break-word;
+    max-width: calc(100%-40px);
+    height: 100%;
+    color: white;
+}
+
+.generated-container .btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.setting,.check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.settings .setting input{
+    outline: 0;
+    font-size: 1rem;
+    color: white;
+    background-color: #23235b;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+    background-color: #23235b;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    border: 2px solid #23235b
+}
+
+.btn{
+    border: none;
+    background-color: #3b3b98;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-large{
+    background-color: #23235b;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+}
