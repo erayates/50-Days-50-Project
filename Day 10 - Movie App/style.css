@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root{
+    --bg-color:#30365F;
+    --card-color:#444c87;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--card-color);
+    padding: 2rem;
+}
+
+.search--area input{
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-color);
+    outline: none;
+    color: #fff;
+}
+
+.search--area input::placeholder{
+    color: #fff;
+}
+
+.search--area i{
+    transform: translateX(-200%);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.movie--card{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--card-color);
+    -webkit-box-shadow: 10px 4px 35px -4px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 4px 35px -4px rgba(0,0,0,0.46);
+    box-shadow: 10px 4px 35px -4px rgba(0,0,0,0.46);
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+
+.movie--card--img{
+    height: 77%;
+    width: 100%;
+}
+
+.movie--card--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie--card--text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin: 0rem 1rem;
+    font-size: 1.3rem;
+}
+
+.movie--card--text h5{
+    max-width: 70%;
+}
+
+.movie--card--imdb{
+    color: goldenrod;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    padding: 0 10px;
+    border-radius: 0.5rem;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.5s ease-in;
+}
+
+.overview p{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.movie--card:hover .overview {
+    transform: translateY(0);
+}
