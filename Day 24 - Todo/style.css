@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This is will not work without height. */
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0;
+    background-color: #F4F3F4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #D7C5EA;
+}
+
+input{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+    outline: none;
+    font-family: 'Muli',sans-serif;
+}
+
+.todo__list{
+    width: 400px;
+}
+.todo{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.todo__left{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    cursor: pointer;
+}
+
+p{
+    margin: 0 1rem;
+    color: slategray;
+}
+
+.completed__todo{
+    text-decoration: line-through;
+    color: lightgreen;
+}
+
+.marked__color{
+    color: lightgreen;
+}
+
+.delete__btn{
+    color: lightcoral;
+}
